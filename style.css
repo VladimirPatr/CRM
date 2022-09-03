@@ -522,6 +522,13 @@ tfoot tr td:last-child{
 	color: #D80101;
 }
 
+.vendor-code__id {
+	display: inline-block;
+	padding: 5px;
+	font-size:  20px;
+	margin-bottom: 30px;
+}
+
 .visible {
 	display: block;
 }
