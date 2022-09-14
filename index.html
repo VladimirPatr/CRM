@@ -9,9 +9,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 
-    <script src="script.js" defer></script>
+    <script type="module" src="script.js"></script>
 </head>
 <body>
+    <script>
+        document.addEventListener('DOMContentLoaded', ()=>{
+            CRMinit();
+        });
+    </script>
+
     <div class="wrapper">
         <button class="close"><img src="img/icon-close.svg" alt=""></button>
         <div class="form-header">
