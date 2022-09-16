@@ -14,8 +14,8 @@ const inputModalPrice = document.querySelector('.form__input_price');
 const inputModalCount = document.querySelector('.form__input_count');
 const totalPriceHeader = document.querySelector('.totalprice-header');
 const totalPriceArray = document.getElementsByClassName('totalprice-td');
-let ID;
-let totalPriceALL = 0;
+let DI =5;
+let priceAll =5;
 
 export default {
     btnAdd,
@@ -34,6 +34,7 @@ export default {
     inputModalCount,
     totalPriceHeader,
     totalPriceArray,
-    ID,
-    totalPriceALL,
   };
+
+  window.ID = DI;
+  window.totalPriceALL = priceAll;

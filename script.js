@@ -2,8 +2,6 @@ import modulesConst from './modules/constans.js';
 import modulesTable from './modules/table.js';
 import modulesForm from './modules/form.js';
 
-
-
 const {
   btnAdd,
   overlayModal,
@@ -21,8 +19,8 @@ const {
   inputModalCount,
   totalPriceHeader,
   totalPriceArray,
-  ID,
-  totalPriceALL        
+  // ID,
+  // totalPriceALL        
 } = modulesConst;
 
 const {

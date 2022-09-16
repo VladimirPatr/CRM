@@ -1,33 +1,23 @@
 import modulesConst from './constans.js';
 import modulesTable from './table.js';
 
+console.log(ID)
 const {
-  btnAdd,
   overlayModal,
-  btnClose,
-  modalForm,
   tBody,
-  tHead,
-  arrayTr,
   formModal,
   checkModal,
   inputModalSale,
-  modalID,
   totalPriceModal,
   inputModalPrice,
   inputModalCount,
-  totalPriceHeader,
-  totalPriceArray,
-  ID,
-  totalPriceALL        
+  // ID,
+  // totalPriceALL        
 } = modulesConst;
 
 const {
   createRow,
   calculationTotalPriceTable,
-  deleteTr,
-  openModal,
-  closeModal 
 } = modulesTable;
 
 

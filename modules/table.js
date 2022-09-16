@@ -1,9 +1,5 @@
 
 import modulesConst from './constans.js';
-// import modulesForm from './form.js';
-
-
-
 const {
   btnAdd,
   overlayModal,
@@ -12,14 +8,9 @@ const {
   arrayTr,
   modalID,
   totalPriceHeader,
-  totalPriceArray,
-  ID,
-  totalPriceALL        
+  totalPriceArray,       
 } = modulesConst;
 
-// const {
-//     calculationTotalPrice,
-// } = modulesForm;
 
 
 // функция создание строки и добавления её в таблицу
@@ -87,10 +78,10 @@ const createRow = ({ name: title, category, unit, count, price, discount} ) => {
 //расчет итоговой стоимости в хедере таблицы
 const calculationTotalPriceTable = () => {
   for (let price of totalPriceArray){
-    // totalPriceALL += parseInt(price.textContent.slice(1)) ;
+    totalPriceALL += parseInt(price.textContent.slice(1)) ;
   };
   totalPriceHeader.innerText = totalPriceALL;
-  // totalPriceALL = 0;
+  totalPriceALL = 0;
 };
 
 //удаление строки в таблице при нажатии на корзину
@@ -118,9 +109,9 @@ const deleteTr = () => {
 const openModal = () => {
   btnAdd.addEventListener('click', () => {
   overlayModal.classList.add('visible');
-  // ID = Math.floor(Math.random()*(10**9)+1);
+  ID = Math.floor(Math.random()*(10**9)+1);
   modalID.textContent = ' ';
-  // modalID.textContent = `ID: ${ID}` ;
+  modalID.textContent = `ID: ${ID}` ;
   return ID;
 });
 };
